@@ -14,4 +14,5 @@ Join/Create Room Interface :
 
 Main Dashboard Interface :
 
-![image alt]()
+![image alt](https://github.com/PranavM4601/ChatAPP/blob/f777a9fce3bf334b90b728ecfaf384749dd94ea9/main%20Interface.jpeg)
+
