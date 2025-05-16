@@ -603,6 +603,7 @@ html,
   box-shadow: 0 0 8px #1e90ffaa;
 }
 
+
 /* Responsive Layout - Keep original layout but stack on smaller screens */
 @media (max-width: 768px) {
   .chat-layout {
