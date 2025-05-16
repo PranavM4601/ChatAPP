@@ -1,5 +1,22 @@
 Building a Real-Time Chat Application using React and WebSocket. The application should allow users to send and receive messages in real-time, join different chat rooms, and handle basic user authentication.
 
+🔥 Real-Time Chat Application – Project Summary
+💬 Real-Time Messaging: Send and receive messages instantly using Socket.IO (WebSocket).
+
+🧑‍💻 User Login: Simulated authentication with just a username .
+
+🏠 Dynamic Chat Rooms: Create and join multiple chat rooms on the fly.
+
+📜 Message History: Displays the last all messages per room.
+
+🔴 Unread Message Notification: A red dot appears next to room names when new messages arrive in inactive rooms.
+
+📱 Responsive Design: Fully responsive layout for both desktop and mobile.
+
+⚛️ Tech Stack: React (Frontend), Node.js with Socket.IO (Backend), Hooks for state management.
+
+
+
 Here's Some images of the APP
 
 Login Interface : 
