@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
 
 * {
   box-sizing: border-box;
@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: #f0f2f5;
 }
 
@@ -54,7 +54,7 @@ body {
 .sidebar-current-room {
   text-align: center;
   margin-bottom: 12px;
-  color:rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
   font-size: 14px;
 }
 
@@ -93,7 +93,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 
 .join-room-button:hover {
   background-color: #1e90ff;
@@ -158,7 +157,8 @@ body {
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
   }
   50% {
@@ -204,7 +204,6 @@ body {
   border-radius: 6px;
 }
 
-
 /* MESSAGES */
 .message {
   margin: 8px 0;
@@ -245,7 +244,7 @@ body {
 }
 
 .message-container {
-  height: 400px;        /* fixed height to enable scrolling */
+  height: 400px; /* fixed height to enable scrolling */
   overflow-y: auto;
   padding: 10px;
   background: #fff;
@@ -253,8 +252,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-
 
 /* CHAT FOOTER */
 .chat-footer {
@@ -340,7 +337,6 @@ body {
     transform: translateY(0);
   }
 }
-
 
 /* AUTH FORM CARD */
 .card-container {
@@ -497,7 +493,9 @@ body {
 }
 /* App.css */
 
-body, html, #root {
+body,
+html,
+#root {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -550,7 +548,7 @@ body, html, #root {
 /* ACTIVE USERS SECTION */
 .user-list {
   margin-top: 20px;
-  text-color:rgb(0, 0, 0);
+  text-color: rgb(0, 0, 0);
 }
 
 .user-list h4 {
@@ -603,4 +601,87 @@ body, html, #root {
   background-color: #1e90ff;
   color: white;
   box-shadow: 0 0 8px #1e90ffaa;
+}
+
+/* Responsive Layout - Keep original layout but stack on smaller screens */
+@media (max-width: 768px) {
+  .chat-layout {
+    flex-direction: column;
+    height: auto;
+    width: 100vw;
+    padding: 0;
+  }
+  .sidebar {
+    background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* other styles */
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px solid #57606f;
+  }
+
+  .chat-section {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .chat-footer {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .chat-input,
+  .file-input,
+  .send-button {
+    width: 100%;
+  }
+
+  .join-room-form {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .join-room-input,
+  .join-room-button {
+    width: 100%;
+  }
+
+  .message {
+    max-width: 85%;
+  }
+  .active-rooms h4 {
+    color: white;
+  }
+}
+
+@media (max-width: 480px) {
+  .chat-layout {
+    padding: 0.5rem;
+  }
+
+  .sidebar h2,
+  .active-users h3 {
+    font-size: 1.2rem;
+  }
+
+  .chat-footer {
+    padding-top: 0.5rem;
+  }
+
+  .chat-input,
+  .file-input {
+    font-size: 0.9rem;
+  }
+
+  .send-button {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .room-button {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+  }
 }
